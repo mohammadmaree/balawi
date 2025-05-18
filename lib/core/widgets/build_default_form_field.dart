@@ -52,30 +52,30 @@ class BuildDefaultFormField extends StatelessWidget {
         labelText: label,
         labelStyle:TextStyle(
           color: PrimaryColors.hint,
-          fontSize: UiResponsive.dimension_14,
+          fontSize: UiResponsive.screenWidth!*0.05,
           fontWeight: FontWeight.w400,
         ),
         hintText: huntText,
-        hintStyle: TextStyle(color: Colors.grey, fontSize: UiResponsive.screenWidth!*0.039,fontWeight: FontWeight.w400,fontFamily: TAJAWAL),
-        contentPadding:EdgeInsetsDirectional.only(start:UiResponsive.screenWidth!*0.05,top: UiResponsive.screenHeight!*0.019,bottom: UiResponsive.screenHeight!*0.019),
+        hintStyle: TextStyle(color: Colors.grey, fontSize: UiResponsive.screenWidth!*0.045,fontWeight: FontWeight.w400,fontFamily: TAJAWAL),
+        contentPadding:EdgeInsetsDirectional.only(start:UiResponsive.screenWidth!*0.05,top: UiResponsive.screenHeight!*0.027,bottom: UiResponsive.screenHeight!*0.027),
         //border: InputBorder.none,
         suffixIcon:suffixIcon?? SizedBox(),
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(UiResponsive.dimension_11),
           borderSide: BorderSide(
-              color: (isValid??true)?PrimaryColors.grey:PrimaryColors.error,width: 0.6
+              color: (isValid??true)?PrimaryColors.black.withOpacity(0.5):PrimaryColors.error,width: 0.6
           ),
         ),
         focusedBorder:  OutlineInputBorder(
           borderRadius: BorderRadius.circular(UiResponsive.dimension_11),
           borderSide: BorderSide(
-              color: (isValid??true)?PrimaryColors.grey:PrimaryColors.error,width: 0.6
+              color: (isValid??true)?PrimaryColors.black.withOpacity(0.5):PrimaryColors.error,width: 0.6
           ),
         ),
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(UiResponsive.dimension_11),
           borderSide: BorderSide(
-              color: (isValid??true)?PrimaryColors.grey:PrimaryColors.error,width: 0.6
+              color: (isValid??true)?PrimaryColors.black.withOpacity(0.5):PrimaryColors.error,width: 0.6
           ),
         ),
       ),

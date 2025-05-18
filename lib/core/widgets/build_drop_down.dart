@@ -31,7 +31,7 @@ class BuildDropDown extends StatelessWidget {
           hint: BuildDefaultText(
             text: hint,
             color: Colors.grey,
-            fontSize: UiResponsive.dimension_14,
+            fontSize: UiResponsive.screenWidth!*0.045,
             fontWeight: FontWeight.w400,
           ),
           items: [
@@ -40,7 +40,7 @@ class BuildDropDown extends StatelessWidget {
               child: BuildDefaultText(
                 text: item,
                 color: PrimaryColors.black,
-                fontSize: UiResponsive.dimension_15,
+                fontSize: UiResponsive.screenWidth!*0.05,
                 fontWeight: FontWeight.w400,
               ),
             ),).toList(),
@@ -50,13 +50,13 @@ class BuildDropDown extends StatelessWidget {
             function(currentValue);
           },
           buttonStyleData: ButtonStyleData(
-            height: UiResponsive.screenHeight! * 0.068,
+            height: UiResponsive.screenHeight! * 0.078,
             width: UiResponsive.screenWidth! * 0.8,
             padding:  EdgeInsetsDirectional.only(start:UiResponsive.screenWidth!*0.05,end: UiResponsive.screenWidth!*0.03),
             decoration: BoxDecoration(
               color: Colors.white,
               borderRadius: BorderRadius.circular(UiResponsive.dimension_11),
-              border: Border.all(color:PrimaryColors.black.withOpacity(0.1),width: 0.6),
+              border: Border.all(color:PrimaryColors.black.withOpacity(0.5),width: 0.6),
             ),
             //  elevation: 1,
           ),
