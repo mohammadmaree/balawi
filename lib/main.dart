@@ -33,7 +33,7 @@ class MyApp extends StatelessWidget {
       locale: context.locale,
       theme: ThemeData(
           colorScheme: ColorScheme.fromSeed(seedColor: PrimaryColors.white).copyWith(background: PrimaryColors.white),
-          dialogTheme: DialogTheme(backgroundColor: PrimaryColors.white),
+         // dialogTheme: DialogTheme(backgroundColor: PrimaryColors.white),
           scaffoldBackgroundColor: PrimaryColors.white
       ),
       defaultTransition: Transition.fadeIn,
