@@ -4,10 +4,11 @@ A Flutter-based food delivery application that showcases modern mobile developme
 
 ## 🚀 Features
 
-- Browse food categories
-- View featured food items
+- Home Screen: Display a list of food categories and featured items.
+- Menu Screen: Display a list of menu items.
+- Item Details Screen: Show full item details.
 - Add items to cart
-- Checkout
+- Cart Screen: Display added items. Include a "Checkout" button.
 
 ## 🛠️ Setup Instructions
 
