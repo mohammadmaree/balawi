@@ -95,6 +95,7 @@ lib/
 - **shared_preferences**: For local storage
 - **go_router**: For navigation
 - **connectivity_plus**: For network connectivity checks
+- **fluttertoast**: For showing toast messages
 
 
 ## 📱 Demo
