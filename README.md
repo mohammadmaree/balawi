@@ -1,6 +1,6 @@
 # Ebtikar Task - Food Delivery App
 
-A Flutter-based food delivery application that showcases modern mobile development practices with a clean architecture approach.
+A food delivery application that showcases modern mobile development practices with a clean architecture approach.
 
 ## 🚀 Features
 
@@ -22,7 +22,6 @@ A Flutter-based food delivery application that showcases modern mobile developme
 1. Clone the repository:
    ```bash
    git clone https://github.com/mohammadmaree/ebtikar_task.git
-   cd ebtikar_task
    ```
 
 2. Install dependencies:
@@ -45,22 +44,19 @@ The app follows Clean Architecture principles with BLoC pattern for state manage
 
 ### 📦 Main Layers
 
-1. **Presentation Layer (UI)**
-   - Responsible for displaying data and handling user interactions.
-   - Contains **Widgets, Pages, Dialogs, Cubits/Blocs**.
+1. **Data Layer (Data Access)**
+   - Responsible for fetching data from any source (API, Database, Local Storage).
+   - Contains **Models**, **Repository Implementations**, and **DataSources**.
 
 2. **Domain Layer (Business Logic)**
    - Contains **UseCases**, and **Repository interfaces**.
    - **UseCases**: Single-purpose actions (e.g., AddItemToCart, GetCartItems).
    - **Repositories (Interfaces)**: Define contracts for data operations without knowing the implementation.
 
-3. **Data Layer (Data Access)**
-   - Responsible for fetching data from any source (API, Database, Local Storage).
-   - Contains **Models**, **Repository Implementations**, and **DataSources**.
+3. **Presentation Layer (UI)**
+   - Responsible for displaying data and handling user interactions.
+   - Contains **Widgets, Pages, Cubits/Blocs**.
 
-4. **Core Layer**
-   - Contains general utilities like **NetworkInfo**, **Constants**, **Extensions**, and **Error Handling**.
-   - Accessible from any layer without depending on other layers.
 
 ### 🔄 Why Use Clean Architecture?
 
