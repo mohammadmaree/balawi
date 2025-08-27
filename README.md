@@ -47,18 +47,15 @@ The app follows Clean Architecture principles with BLoC pattern for state manage
 1. **Presentation Layer (UI)**
    - Responsible for displaying data and handling user interactions.
    - Contains **Widgets, Pages, Dialogs, Cubits/Blocs**.
-   - Should not contain business logic; it relies on **UseCases** to fetch data.
 
 2. **Domain Layer (Business Logic)**
-   - Contains **Entities**, **UseCases**, and **Repository interfaces**.
-   - **Entities**: Core objects of the app (e.g., User, FoodItem, CartItem).
+   - Contains **UseCases**, and **Repository interfaces**.
    - **UseCases**: Single-purpose actions (e.g., AddItemToCart, GetCartItems).
    - **Repositories (Interfaces)**: Define contracts for data operations without knowing the implementation.
 
 3. **Data Layer (Data Access)**
    - Responsible for fetching data from any source (API, Database, Local Storage).
    - Contains **Models**, **Repository Implementations**, and **DataSources**.
-   - Converts raw data into **Entities** that the Domain layer can understand.
 
 4. **Core Layer**
    - Contains general utilities like **NetworkInfo**, **Constants**, **Extensions**, and **Error Handling**.
