@@ -38,9 +38,11 @@ A food delivery application that showcases modern mobile development practices w
 
 The app follows Clean Architecture principles with BLoC pattern for state management:
 
+
 ## 🏛️ What is Clean Architecture?
 
 **Clean Architecture** is a way to organize code into separate layers, each with a clear responsibility. This makes the code easier to maintain, test, and scale. The main idea is to separate **business logic** from **user interface** and data access methods.
+
 
 ### 📦 Main Layers
 
@@ -86,7 +88,6 @@ lib/
 └── main.dart              # App entry point
 
 ```
-
 ### Dependencies
 - **flutter_bloc**: For state management
 - **get_it**: For dependency injection
@@ -94,6 +95,7 @@ lib/
 - **shared_preferences**: For local storage
 - **go_router**: For navigation
 - **connectivity_plus**: For network connectivity checks
+
 
 ## 📱 Demo
 
