@@ -61,7 +61,6 @@ The app follows Clean Architecture principles with BLoC pattern for state manage
 ### 🔄 Why Use Clean Architecture?
 
 - Separating responsibilities makes the code easier to read and maintain.
-- Each layer can be tested independently.
 - Changing the UI or data source does not affect business logic.
 - Enables teamwork, as developers can work on different layers without breaking others.
 
@@ -73,7 +72,7 @@ lib/
 ├── features/              # Feature modules
 │   ├── home/              # Home feature
 │   │   ├── data/          # Data layer (models, datasources, repositories implementations)
-│   │   ├── domain/        # Domain layer (entities, use cases, repository interfaces)
+│   │   ├── domain/        # Domain layer (use cases, repository interfaces)
 │   │   └── presentation/  # Presentation layer (pages, widgets, cubits/blocs)
 │   ├── cart/
 │   │   ├── data/
@@ -87,9 +86,6 @@ lib/
 └── main.dart              # App entry point
 
 ```
-
-### State Management
-- **BLoC/Cubit**: Used for state management due to its simplicity and predictability
 
 ### Dependencies
 - **flutter_bloc**: For state management
